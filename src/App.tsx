@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import HomeView from './views/HomeView';
+import Footer from './components/Footer';
+import TopBar from './components/TopBar';
+import RecapBar from './components/RecapBar';
+import MainContent from './layout/MainContent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopBar/>
+      <div className="flex flex-1">
+      <RecapBar/>
+      <MainContent/>
+      </div>
+      {/* <HomeView/> */}
+      <Footer/>
     </div>
   );
 }
