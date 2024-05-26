@@ -1,14 +1,33 @@
 [
     {
-      "id": 1,
-      "question": "What type of website do you need?",
-      "options": [
-        { "type": "Business Website", "description": "A professional website for your business, including information about your services and products." },
-        { "type": "E-commerce Website", "description": "An e-commerce website to sell products or services online." },
-        { "type": "Portfolio Website", "description": "A website to showcase your work and projects, ideal for artists, designers, and photographers." },
-        { "type": "Landing Page", "description": "A landing page to promote a specific product, service, or event." },
-        { "type": "Other", "description": "" }
-      ]
+        "id": 1,
+        "question": "What type of website do you need?",
+        "options": [
+            {
+                "type": "Business Website",
+                "icon": "./icons/business website.svg",
+                "description": "A professional website for your business, including information about your services and products."
+            },
+            {
+                "type": "E-commerce Website",
+                "icon": "./icons/e-commerce website.svg",
+                "description": "An e-commerce website to sell products or services online."
+            },
+            {
+                "type": "Portfolio Website",
+                "icon": "./icons/portfolio website.svg",
+                "description": "A website to showcase your work and projects, ideal for artists, designers, and photographers."
+            },
+            {
+                "type": "Landing Page",
+                "icon": "./icons/Landing page.svg",
+                "description": "A landing page to promote a specific product, service, or event."
+            },
+            {
+                "type": "Other",
+                "icon": "./icons/other website.svg",
+                "description": ""
+            }
+        ]
     }
 ]
-  

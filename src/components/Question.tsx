@@ -6,6 +6,7 @@ import NextButton from './Buttons/NextButton';
 
 interface Option {
   type: string;
+  icon: string;
   description: string;
 }
 
@@ -33,19 +34,20 @@ const Question: React.FC = () => {
   };
 
   return (
-    <div className='text-' style={{ minHeight: '75vh' }}>
+    <div className='min-h-80'>
       <BackButton onClick={handlePrev} disabled={currentStep === 0} />
       <h2 className="text-xl font-bold mb-4 text-center">{getCurrentQuestion().question}</h2>
-      {/* <p className="mb-4 text-center">{getCurrentQuestion().question}</p> */}
-      <div className="mb-4 max-w-md mx-auto flex flex-row flex-wrap justify-center">
+      <div className="mb-4 max-w-xl mx-auto flex flex-row flex-wrap justify-center">
         {getCurrentQuestion().options.map((option, index) => (
-          <div key={index} className="m-2">
+          <div key={index} className="m-2 rounded shadow-md box-border">
             <BoxQuestion
-              type={option.type} />
-            {/* <p> {option.description} </p> */}
+              type={option.type} 
+              icon={option.icon}
+              />
           </div>
         ))}
       </div>
+      <p className='text-center mb-2'>ok</p>
       <div className="flex justify-center">
         <NextButton onClick={handleNext} disabled={currentStep === questionsData.length - 1} />
       </div>
